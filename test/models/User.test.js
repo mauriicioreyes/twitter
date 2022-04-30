@@ -17,6 +17,12 @@ describe("Tests para User", () => {
     test("Requerimiento 3: Agregando getters", () => {
         const user = new User(1, "mauriicioreyes", "mauricio", "bio")
         expect(user.getUsername).toBe("mauriicioreyes")
+    });
+
+    test("Requerimiento 4: Agregando setters para username y bio", () => {
+        const user = new User(2, "mauri123", "mau", "bio")
+        user.setUsername = "elmau123"
+        expect(user.username).toBe("elmau123")
     })
 })
 // describe("Prueba de jest", () => {

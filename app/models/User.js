@@ -11,6 +11,10 @@ class User {
     get getUsername () {
         return this.username
     }
+
+    set setUsername(newUsername) {
+        this.username = newUsername
+    }
 }
 
 module.exports = User
