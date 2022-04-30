@@ -4,7 +4,8 @@
   "description": "Esto es un proyecto de LaunchX",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test_default": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./node_modules/jest/bin/jest"
   },
   "author": "mauriicioreyes",
   "license": "ISC",
