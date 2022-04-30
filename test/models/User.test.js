@@ -2,7 +2,7 @@ const User = require('./../../app/models/User')
 
 describe("Tests para User", () => {
     test("Requerimiento 1: Creación de User", () => {
-        const user = new User(1, "mauriicioreyes", "Mauricio", "Bio", "dateCreated", "lastUpdated")
+        const user = new User(1, "mauriicioreyes", "Mauricio", "Bio")
         expect(user.id).toBe(1)
         expect(user.username).toBe("mauriicioreyes")
     });
@@ -12,6 +12,11 @@ describe("Tests para User", () => {
         expect(user.dateCreated).not.toBeUndefined()
         expect(user.lastUpdated).not.toBeUndefined()
 
+    });
+
+    test("Requerimiento 3: Agregando getters", () => {
+        const user = new User(1, "mauriicioreyes", "mauricio", "bio")
+        expect(user.getUsername).toBe("mauriicioreyes")
     })
 })
 // describe("Prueba de jest", () => {
